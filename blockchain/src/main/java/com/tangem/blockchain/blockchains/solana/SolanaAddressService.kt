@@ -7,7 +7,7 @@ import org.p2p.solanaj.core.PublicKey
 /**
  * Created by Anton Zhilenkov on 21/01/2022.
  */
-class SolanaAddressService : AddressService() {
+class SolanaAddressService : AddressService {
 
     override fun makeAddress(walletPublicKey: ByteArray, curve: EllipticCurve?): String {
         return PublicKey(walletPublicKey).toBase58()
