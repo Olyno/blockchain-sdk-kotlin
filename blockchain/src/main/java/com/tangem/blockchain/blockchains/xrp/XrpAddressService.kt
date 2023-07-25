@@ -14,6 +14,8 @@ import org.kethereum.extensions.toBigInteger
 
 class XrpAddressService : AddressService {
 
+    // TODO check implementation, should support both curves
+    // https://tangem.atlassian.net/browse/AND-4114}
     override fun makeAddress(
         publicKey: Wallet.PublicKey,
         addressType: AddressType,
